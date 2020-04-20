@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF306E33"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="110dp"
+        android:layout_height="96dp"
+        android:background="@android:drawable/ic_menu_send"
+        android:foreground="?android:attr/textSelectHandle"
+        android:text="@string/spin"
+        app:layout_constraintBottom_toBottomOf="@+id/wheel"
+        app:layout_constraintEnd_toEndOf="@+id/wheel"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/wheel"
+        app:layout_constraintTop_toTopOf="@+id/wheel" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="292dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="64dp"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:textColor="#FFC107"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:fontFamily="sans-serif-smallcaps"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/wheel"
+        android:layout_width="518dp"
+        android:layout_height="506dp"
+        android:layout_marginTop="80dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Back"
+        app:srcCompat="@drawable/wheel" />
+
+    <Button
+        android:id="@+id/Back"
+        android:layout_width="154dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="#E80303"
+        android:foregroundGravity="center_vertical|center|center_horizontal"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:text="@string/menu"
+        android:textColor="#FFC107"
+        android:textSize="18sp"
+        android:typeface="serif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
